@@ -13,3 +13,45 @@
  *= require_tree .
  *= require_self
  */
+h1{
+    color: cyan;
+    text-align: left;
+}
+body{
+    background-image: url("https://images.fineartamerica.com/images-medium-large-5/blue-rose-doug-long.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: black;
+    color: #7E86FF;
+    font-size: larger;
+}
+input{
+    color: blue;
+}
+#createbutton1{
+    color: blue;
+    text-align: center;
+    margin-right: 1950px;
+}
+#to-do{
+    padding: 1px;
+    border: dotted 3px azure;
+    text-align: left;
+    margin-left: 200px;
+    margin-right: 750px;
+    margin-bottom: 10px;
+}
+ul{
+    list-style: none;
+}
+img{
+    width: 100%;
+    margin-top: 0px;
+    position: absolute
+}
+#write-to-do{
+    margin-right: 1950px;
+}
+.completed{
+    text-decoration: line-through;
+}
