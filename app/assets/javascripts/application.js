@@ -15,15 +15,20 @@
 //= require turbolinks
 //= require_tree .
 $(document).ready(function(){
-    $("#createbutton1").click(function(){
+    $("#createbutton2").click(function(){
+        var toDoBlock=$(this).closest("#new-todo-block")
         var nameOfToDo=$("#write-to-do").val();
         var timeInMinutes=$("#minutesneeded").val();
         $("ul").append("<li><input type='checkbox'/>"+nameOfToDo+"<span>: "+timeInMinutes+" min.</span></li>");
         console.log(timeInMinutes);
-    });
+        
+        
+        nameOfToDo.val("")
+        timeInMinutes.val("")
+    })
     
     $("input[type='checkbox']").click(function(){
         $(this).closest("li").toggleClass("completed");
-});
+})
     
-});
+})
